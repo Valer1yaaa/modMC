@@ -6,6 +6,10 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.FoodComponents;
 
 public class ModFoodComponents {
-    public static final FoodComponent CUPCAKE = new FoodComponent.Builder().hunger(2).saturationModifier(0.25f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 200), 0.25f).build();
+    public static final FoodComponent CUPCAKE = new FoodComponent.Builder()
+            .hunger(3)
+            .saturationModifier(0.25f)
+            .alwaysEdible()
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5*20), 1.0f)
+            .build();
 }
