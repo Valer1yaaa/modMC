@@ -4,10 +4,17 @@
   "key": {
     "#": {
       "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "S": {
+      "item": "minecraft:sugar"
     }
   },
   "pattern": [
-    "###",
+    " B ",
+    "SSS",
     "###"
   ],
   "result": {
