@@ -14,7 +14,8 @@ import net.minecraft.registry.Registry;
 
 public class ModItems {
 
-    public static final Item CUPCAKE = registerItem("cupcake", new Item(new FabricItemSettings()));
+    public static final Item CUPCAKE = registerItem("cupcake", new Item(new FabricItemSettings().food(ModFoodComponents.CUPCAKE)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CUPCAKE);
     }
